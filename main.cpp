@@ -14,7 +14,7 @@ int main(int argc, char** argv) {
 
 	char op, s[MAXOP];
 	struct my_stack stack;
-	my_stack_init();
+	my_stack_init(&stack,100);
 	op = getop(s);
 	while (op != EOF) {
 		switch (op) {
